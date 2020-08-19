@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CUSTOM STYLESHEETS -->
+  <link rel="stylesheet" href="assets/CSS/stylesheet.css">
+  <link rel="stylesheet" media="only screen and (max-width: 500px)" href="assets/CSS/mobile.css">
+
+  <title>Rock-Paper-Scissors | Kanishk</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="LOGO">
+    </div>
+
+    <div class="score-container">
+      <h3>score</h3>
+      <h1 id="score">0</h1>
+    </div>
+  </header>
+
+  <main id="options">
+    <div id="paper" class="option-btn game-btn paper-btn ">
+      <img src="assets/images/icon-paper.svg" alt="Paper">
+    </div>
+
+    <div id="scissors" class="option-btn game-btn scissors-btn ">
+      <img src="assets/images/icon-scissors.svg" alt="Scissors">
+    </div>
+
+    <div id="rock" class="option-btn game-btn rock-btn">
+      <img src="assets/images/icon-rock.svg" alt="Rock">
+    </div>
+  </main>
+
+
+  <main id="result-container" class="result hide-container">
+
+    <div class="user-choice-container">
+      <h2>You Picked</h2>
+      <div id="user-choice" class="game-btn user-picked">
+        <img id="user-picked" src="" alt="Paper">
+      </div>
+    </div>
+
+    <div class="final-result">
+      <h1><b id="you">You</b> <span>Win</span> </h1>
+      <h3 id="play-again">Play Again</h3>
+    </div>
+
+    <div class="computer-choice">
+      <h2>The House Picked</h2>
+      <div id="auto-picked" class="game-btn computer-picked">
+        <img id="house-picked" src="" alt="Rock">
+      </div>
+    </div>
+
+  </main>
+
+
+  <div id="rules" class="rules-btn">
+    <h1>RULES</h1>
+  </div>
+
+  <div id="reset-score" class="reset-btn">
+    <h1>RESET</h1>
+  </div>
+
+  <section class="rules-container hide-container">
+    <section class="rules">
+      <div>
+        <h1>RULES</h1>
+        <img id="close-btn" class="close-button" src="assets/images/icon-close.svg" alt="Close">
+      </div>
+      <img class="rules-img" src="assets/images/image-rules.svg" alt="Rules">
+    </section>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/JavaScript/game.js"></script>
+</body>
+
+</html>
