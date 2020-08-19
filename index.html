@@ -16,7 +16,7 @@
   <title>Rock-Paper-Scissors | Kanishk</title>
 </head>
 
-<body>
+<body onload="loading()">
 
   <header>
     <div class="logo">
@@ -85,6 +85,14 @@
       <img class="rules-img" src="assets/images/image-rules.svg" alt="Rules">
     </section>
   </section>
+
+  <div id="loader" class="css-loading hide">
+    <div class="cssload-cube">
+      <div class="cssload-face cssload-x"></div>
+      <div class="cssload-face cssload-y"></div>
+      <div class="cssload-face cssload-z"></div>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/JavaScript/game.js"></script>

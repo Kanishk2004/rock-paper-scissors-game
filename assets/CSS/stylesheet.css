@@ -181,3 +181,89 @@ main{
      rgba(255, 255, 255, 0.04) 0px 0px 0px 96px,
      rgba(0, 0, 0, 0.3) 0px 8px 2px inset;
 }
+
+
+/* CSS LOADER ANIMATION */
+.css-loading{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cssload-cube, .cssload-face {
+	width: 25px;
+	height: 25px;
+}
+.cssload-cube {
+	display:block;
+	margin:50px auto;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: rotateX(45deg) rotate(45deg);
+	animation: magic 1.7s ease-in-out infinite both;
+}
+.cssload-face {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	transform-style: preserve-3d;
+					transform-style: preserve-3d;
+}
+.cssload-face:before, .cssload-face:after {
+	display: block;
+	content: "";
+	background-color: inherit;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	transform-style: preserve-3d;
+					transform-style: preserve-3d;
+}
+.cssload-z {
+	background: #5671f5;
+	transform: translateZ(12px);
+}
+.cssload-x {
+	background-color: hsl(349, 71%, 52%);
+}
+.x:after {
+	transform: rotateX(90deg) translateZ(12px);
+}
+.cssload-x:before {
+	transform: rotateX(90deg) translateZ(-12px);
+}
+.cssload-y {
+	background-color: hsl(39, 89%, 49%);
+}
+.cssload-y:after {
+	transform: rotateY(90deg) translateZ(12px);
+}
+.cssload-y:before {
+	transform: rotateY(90deg) translateZ(-12px);
+}
+@keyframes magic {
+	16% {
+		transform: rotateX(45deg) rotate(45deg) scaleX(3);
+	}
+	33% {
+		transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);
+	}
+	50% {
+		transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);
+	}
+	66% {
+		transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);
+	}
+	83% {
+		transform: rotateX(45deg) rotate(45deg) scaleY(3);
+	}
+}
+
+.hide{
+    display: none;
+}

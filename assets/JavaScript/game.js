@@ -7,6 +7,13 @@ $("#close-btn").click(() => {
     $(".rules-container").addClass("hide-container");
 });
 
+function loading() {
+    $('#loader').removeClass('hide');
+    setTimeout(()=>{
+        $('#loader').addClass('hide');
+    },1500)
+};
+
 let computerChoiceOptions = ["paper", "scissors", "rock"];
 let score = 0;
 
